@@ -37,7 +37,6 @@ public class FlyCompany {
         return null;
     }
 
-    @WebEndpoint(name = "teste")
     public ArrayList<Flights> getAllFlights() {
         return flights;
     }
