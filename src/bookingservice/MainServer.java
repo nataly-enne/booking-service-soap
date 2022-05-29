@@ -1,0 +1,15 @@
+package bookingservice;
+
+import javax.xml.ws.Endpoint;
+
+public class MainServer {
+
+    public static void main(String[] args) {
+
+        Endpoint.publish("http://127.0.0.1:8080/bookingservice", new BookingServiceImpl());
+
+        System.out.println("Server Starterd.");
+
+    }
+
+}
